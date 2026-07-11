@@ -1,32 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>MATHI OS v3 Starter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MATHI OS v3.1</title>
 <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-<div id="loginScreen">
-<h1>MATHI OS 💜</h1>
-<input type="password" id="password" placeholder="Password">
+<div id="bootScreen"><h1>MATHI OS</h1><p>Loading...</p></div>
+<div id="loginScreen" class="hidden">
+<div class="login-box">
+<h1>💜 MATHI OS</h1>
+<p>Personal AI Workspace</p>
+<input type="password" id="password" placeholder="Enter Password">
 <button onclick="login()">Unlock</button>
 <p id="error"></p>
 </div>
+</div>
 
-<div id="app" class="hidden">
-<div class="desktop">
-<h2>Welcome Shanmathi 💜</h2>
-<div class="icons">
-<button>🤖 AI</button>
-<button>📝 Notes</button>
-<button>📁 Files</button>
-<button>📷 Camera</button>
-<button>🧮 Calculator</button>
-<button>⚙️ Settings</button>
+<div id="desktop" class="hidden">
+<div class="desktop-icons">
+<div class="icon"><i class="fa-solid fa-robot"></i><span>AI</span></div>
+<div class="icon"><i class="fa-solid fa-note-sticky"></i><span>Notes</span></div>
+<div class="icon"><i class="fa-solid fa-folder"></i><span>Files</span></div>
+<div class="icon"><i class="fa-solid fa-camera"></i><span>Camera</span></div>
+<div class="icon"><i class="fa-solid fa-calculator"></i><span>Calculator</span></div>
+<div class="icon"><i class="fa-solid fa-gear"></i><span>Settings</span></div>
+</div>
+<div class="taskbar">
+<button>🚀 Start</button>
+<input type="text" placeholder="Search">
+<div id="clock">00:00</div>
 </div>
 </div>
-</div>
+
 <script src="script.js"></script>
 </body>
 </html>
