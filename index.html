@@ -1,124 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MATHI OS</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>MATHI OS v3 Starter</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div id="loginScreen">
+<h1>MATHI OS 💜</h1>
+<input type="password" id="password" placeholder="Password">
+<button onclick="login()">Unlock</button>
+<p id="error"></p>
+</div>
 
-    <!-- Login Screen -->
-    <div id="loginScreen" class="login-screen">
-
-        <div class="login-box">
-
-            <h1>MATHI OS 💜</h1>
-
-            <p>Your Personal AI Workspace</p>
-
-            <input
-                type="password"
-                id="password"
-                placeholder="Enter Password"
-            >
-
-            <button onclick="login()">
-                Unlock
-            </button>
-
-            <p id="error"></p>
-
-        </div>
-
-    </div>
-
-    <!-- Main App -->
-    <div id="app" class="hidden">
-
-        <!-- Sidebar -->
-        <div class="sidebar">
-
-            <div class="logo">
-                MATHI OS
-            </div>
-
-            <ul>
-
-                <li class="active">
-                    🤖 AI Chat
-                </li>
-
-                <li>
-                    📝 Notes
-                </li>
-
-                <li>
-                    📁 Files
-                </li>
-
-                <li>
-                    📸 Camera
-                </li>
-
-                <li>
-                    🎓 Projects
-                </li>
-
-                <li>
-                    ⚙️ Settings
-                </li>
-
-            </ul>
-
-        </div>
-
-        <!-- Main Content -->
-        <div class="main">
-
-            <div class="topbar">
-
-                <h2>
-                    Welcome Shanmathi 💜
-                </h2>
-
-            </div>
-
-            <!-- Chat Area -->
-            <div class="chat-container">
-
-                <div class="message bot">
-                    Hi Shanmathi 👋
-                    Welcome to MATHI OS
-                </div>
-
-                <div id="chatArea"></div>
-
-            </div>
-
-            <!-- Input -->
-            <div class="input-area">
-
-                <input
-                    type="text"
-                    id="userInput"
-                    placeholder="Type something..."
-                >
-
-                <button onclick="sendMessage()">
-                    Send
-                </button>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <script src="script.js"></script>
-
+<div id="app" class="hidden">
+<div class="desktop">
+<h2>Welcome Shanmathi 💜</h2>
+<div class="icons">
+<button>🤖 AI</button>
+<button>📝 Notes</button>
+<button>📁 Files</button>
+<button>📷 Camera</button>
+<button>🧮 Calculator</button>
+<button>⚙️ Settings</button>
+</div>
+</div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
