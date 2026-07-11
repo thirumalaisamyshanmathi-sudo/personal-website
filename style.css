@@ -1,6 +1,149 @@
-body{margin:0;font-family:Arial;background:#1b1036;color:white}
-#loginScreen{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center}
-.hidden{display:none}
-input,button{padding:10px;margin:8px;border-radius:8px}
-.desktop{height:100vh;padding:30px;background:linear-gradient(135deg,#4b0082,#1b1036)}
-.icons button{margin:10px;font-size:18px}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#2b1055,#6a11cb);
+height:100vh;
+overflow:hidden;
+color:#fff;
+}
+
+.hidden{
+display:none;
+}
+
+#bootScreen{
+position:fixed;
+inset:0;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:#12061f;
+z-index:9999;
+}
+
+#bootScreen h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+#loginScreen{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.login-box{
+width:360px;
+padding:30px;
+border-radius:20px;
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(15px);
+text-align:center;
+box-shadow:0 10px 35px rgba(0,0,0,.35);
+}
+
+.login-box h1{
+margin-bottom:10px;
+}
+
+.login-box p{
+margin-bottom:20px;
+}
+
+.login-box input{
+width:100%;
+padding:12px;
+border:none;
+border-radius:10px;
+margin-bottom:15px;
+outline:none;
+}
+
+.login-box button{
+width:100%;
+padding:12px;
+border:none;
+border-radius:10px;
+background:#8b5cf6;
+color:#fff;
+font-size:16px;
+cursor:pointer;
+transition:.3s;
+}
+
+.login-box button:hover{
+background:#7c3aed;
+}
+
+#desktop{
+height:100vh;
+background:linear-gradient(135deg,#3b0764,#4c1d95,#312e81);
+}
+
+.desktop-icons{
+display:grid;
+grid-template-columns:repeat(2,90px);
+gap:25px;
+padding:30px;
+}
+
+.icon{
+display:flex;
+flex-direction:column;
+align-items:center;
+cursor:pointer;
+}
+
+.icon i{
+font-size:34px;
+margin-bottom:8px;
+}
+
+.icon span{
+font-size:14px;
+}
+
+.taskbar{
+position:fixed;
+left:0;
+right:0;
+bottom:0;
+height:55px;
+background:rgba(0,0,0,.35);
+backdrop-filter:blur(10px);
+display:flex;
+align-items:center;
+gap:12px;
+padding:0 15px;
+}
+
+.taskbar button{
+padding:8px 14px;
+border:none;
+border-radius:8px;
+background:#8b5cf6;
+color:#fff;
+cursor:pointer;
+}
+
+.taskbar input{
+flex:1;
+padding:9px;
+border:none;
+border-radius:8px;
+outline:none;
+}
+
+#clock{
+min-width:70px;
+text-align:center;
+font-weight:bold;
+}
+
